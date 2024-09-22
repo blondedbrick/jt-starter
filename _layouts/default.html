@@ -10,43 +10,13 @@
     </head>
     <body class="flex flex-col items-center">
 
-
-        <nav class="nav-bar content-width">
-        <h2>
-            {{ site.title }}
-        </h2>
-
-        <ul class="list-none flex flex-row">
-
-        <li class="mx-2 text-base"><a href="#">About</a></li>
-        <li class="mx-2 text-base"><a href="#">Projects</a></li>
-        <li class="mx-2 text-base"><a href="#">Contact</a></li>
-
-        </ul>
-
-
-
-        <a href="#" class="btn btn-cta">Button</a>
-        </nav>
+        {% include nav-bar.html %}
 
         <main class="content-width my-4">
+
             {{ content }}
 
-            <div class="flex justify-between">
-            {% for post in site.posts %}
-            <article class="max-w-md mr-4 p-4 border">
-              <h2>
-                <a href="{{ post.url }}" class="underline">
-                  {{ post.title }}
-                </a>
-              </h2>
-              <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
-              <span class="line-clamp-4">{{ post.content }}</span>
-            </article>
-          {% endfor %}
-        </div>
-
         </main>
-        <script src="" async defer></script>
+        {% include footer.html %}
     </body>
 </html>

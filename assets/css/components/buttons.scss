@@ -12,13 +12,20 @@
 
 
 .btn-cta{
-    @apply bg-purple-800 text-stone-50 border-purple-600;
+    @apply bg-emerald-800 text-stone-50 border-emerald-600;
 
     &:hover{
-        @apply bg-purple-700;
+        @apply bg-emerald-700;
     }
 }
 
+.btn-primary{
+    @apply text-stone-100 bg-stone-800 border-stone-600;
+
+    &:hover{
+        @apply bg-stone-700 border-stone-700;
+    }
+}
 
 .btn-secondary{
     @apply text-stone-800 border-stone-300;

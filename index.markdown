@@ -6,11 +6,6 @@ layout: default
 title: Landing Page
 ---
 
-# Welcome to {{ site.title }}
-{: .text-5xl}
+ {% include hero-section.html %}
 
-Don't worry about things you don't have control over.
-{: .mb-8}
-
-Button
-{: .btn .btn-secondary}
+ {% include posts-loop.html %}

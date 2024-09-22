@@ -1,0 +1,13 @@
+<div class="flex justify-between my-10">
+    {% for post in site.posts %}
+    <article class="max-w-md mr-4 p-4 border">
+      <h3 class="text-xl">
+        <a href="{{ post.url }}" class="underline">
+          {{ post.title }}
+        </a>
+      </h3>
+      <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
+      <span class="line-clamp-4">{{ post.content }}</span>
+    </article>
+  {% endfor %}
+</div>
