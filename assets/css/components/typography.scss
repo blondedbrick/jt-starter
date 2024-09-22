@@ -5,6 +5,14 @@
   font-optical-sizing: auto;
 }
 
+/*material symbols settings*/
+.material-symbols-rounded {
+  @apply p-0 ml-1;
+
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20 !important;
+  color: inherit;
+}
+
 h1,
 h2,
 h3,

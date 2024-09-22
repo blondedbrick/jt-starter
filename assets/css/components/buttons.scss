@@ -1,36 +1,35 @@
-.btn{
-    @apply px-8 py-4 rounded border max-w-fit;
+.btn {
+  @apply px-4 py-4 rounded border max-w-fit min-w-36 flex justify-center;
 
-    &:hover{
-        @apply shadow-lg transition;
-    }
-
-    &:active{
-        @apply opacity-75;
-    }
+  &:hover {
+    @apply shadow-lg transition;
   }
 
-
-.btn-cta{
-    @apply bg-emerald-700 text-stone-50 border-emerald-600;
-
-    &:hover{
-        @apply bg-emerald-600;
-    }
+  &:active {
+    @apply opacity-75;
+  }
 }
 
-.btn-primary{
-    @apply text-stone-100 bg-stone-800 border-stone-600;
+.btn-cta {
+  @apply bg-emerald-700 text-stone-50 border-emerald-600;
 
-    &:hover{
-        @apply bg-stone-700 border-stone-700;
-    }
+  &:hover {
+    @apply bg-emerald-600;
+  }
 }
 
-.btn-secondary{
-    @apply text-stone-800 border-stone-300;
+.btn-primary {
+  @apply text-stone-100 bg-stone-800 border-stone-600;
 
-    &:hover{
-        @apply bg-stone-200 border-stone-200;
-    }
+  &:hover {
+    @apply bg-stone-700 border-stone-700;
+  }
+}
+
+.btn-secondary {
+  @apply text-stone-800 border-stone-300;
+
+  &:hover {
+    @apply bg-stone-200 border-stone-200;
+  }
 }

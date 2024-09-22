@@ -1,12 +1,21 @@
-<nav class="nav-bar content-width">
-  <h2 class="text-2xl">{{ site.title }}</h2>
+<nav class="nav-bar">
+  <div class="content-width w-full flex justify-between items-center">
+    <h2 class="text-2xl">{{ site.title }}</h2>
 
-  <ul class="list-none flex flex-row">
-    <li class="mx-2 text-base"><a href="#">About</a></li>
-    <li class="mx-2 text-base"><a href="#">Projects</a></li>
-    <li class="mx-2 text-base"><a href="#">Contact</a></li>
-    <li class="mx-2 text-base"><a href="#">Contact</a></li>
-  </ul>
+    <ul class="list-none flex flex-row">
+      <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
+        <a href="#">About</a>
+      </li>
+      <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
+        <a href="#">Projects</a>
+      </li>
+      <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
 
-  <a href="#" class="btn btn-cta">Button</a>
+    <button href="#" class="btn btn-cta">
+      Button <span class="material-symbols-rounded">arrow_forward</span>
+    </button>
+  </div>
 </nav>
