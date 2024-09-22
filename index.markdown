@@ -6,6 +6,10 @@ layout: default
 title: Landing Page
 ---
 
- {% include hero-section.html %}
+{% include hero-section.html %}
 
- {% include posts-loop.html %}
+{% include media-text.html %}
+
+{% include media-text-reverse.html %}
+
+{% include posts-loop.html %}
