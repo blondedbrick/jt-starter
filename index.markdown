@@ -6,7 +6,7 @@ layout: default
 title: Landing Page
 ---
 
-# Welcome to {{ page.title }}
+# Welcome to {{ site.title }}
 {: .text-5xl}
 
 Don't worry about things you don't have control over.
