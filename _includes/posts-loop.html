@@ -1,13 +1,31 @@
 <div class="flex justify-between my-10">
     {% for post in site.posts %}
-    <article class="max-w-md mr-4 p-4 border">
-      <h3 class="text-xl">
+    <article class="max-w-md mr-2 border rounded">
+
+        <picture class="post-thumbnail">
+            <!-- Small screens (e.g., mobile) -->
+            <source media="(max-width: 640px)" srcset="{{ post.thumbnail | replace: '.jpg', '-small.jpg' }}">
+            
+            <!-- Medium screens (e.g., tablets) -->
+            <source media="(max-width: 1024px)" srcset="{{ post.thumbnail | replace: '.jpg', '-medium.jpg' }}">
+        
+            <!-- Large screens (e.g., desktops) -->
+            <source media="(min-width: 1025px)" srcset="{{ post.thumbnail | replace: '.jpg', '-large.jpg' }}">
+        
+            <!-- Default fallback image -->
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="aspect-ratio">
+          </picture>
+
+<div class="p-4">
+    <h3 class="text-xl">
         <a href="{{ post.url }}" class="underline">
           {{ post.title }}
         </a>
       </h3>
       <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
       <span class="line-clamp-4">{{ post.content }}</span>
+</div>
+      
     </article>
   {% endfor %}
 </div>

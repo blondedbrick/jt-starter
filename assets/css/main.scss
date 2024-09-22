@@ -8,12 +8,11 @@
 @import "components/typography.scss";
 
 /* Custom Styling */
- 
+
 body {
-    @apply bg-stone-50;
-  }
+  @apply bg-stone-50;
+}
 
-
-.content-width{
-    @apply max-w-screen-xl w-full;
-  }
+.content-width {
+  @apply max-w-screen-xl w-full;
+}

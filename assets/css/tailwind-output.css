@@ -681,11 +681,6 @@ video {
   border-width: 1px;
 }
 
-.bg-emerald-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
-}
-
 .bg-stone-100{
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -750,12 +745,12 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(5 150 105 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(6 95 70 / var(--tw-bg-opacity));
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(250 250 249 / var(--tw-text-opacity));
   &:hover{
     --tw-bg-opacity: 1;
-    background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+    background-color: rgb(5 150 105 / var(--tw-bg-opacity));
   }
 }
 

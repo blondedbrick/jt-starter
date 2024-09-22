@@ -12,10 +12,10 @@
 
 
 .btn-cta{
-    @apply bg-emerald-800 text-stone-50 border-emerald-600;
+    @apply bg-emerald-700 text-stone-50 border-emerald-600;
 
     &:hover{
-        @apply bg-emerald-700;
+        @apply bg-emerald-600;
     }
 }
 

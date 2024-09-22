@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ page.title }}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ '/assets/css/tailwind-output.css' | relative_url }}">
-    </head>
-    <body class="flex flex-col items-center">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{ page.title }}</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/tailwind-output.css' | relative_url }}"
+    />
+  </head>
+  <body class="flex flex-col items-center">
+    {% include nav-bar.html %}
 
-        {% include nav-bar.html %}
-
-        <main class="content-width my-4">
-
-            {{ content }}
-
-        </main>
-        {% include footer.html %}
-    </body>
+    <main class="content-width my-4">{{ content }}</main>
+    {% include footer.html %}
+  </body>
 </html>
