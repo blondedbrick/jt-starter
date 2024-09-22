@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    @apply text-stone-900;
+  }
+
+
+  p{
+    @apply text-stone-500 text-lg;
+  }

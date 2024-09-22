@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ '/assets/css/tailwind-output.css' | relative_url }}">
+    </head>
+    <body class="flex flex-col items-center">
+
+
+        <nav class="nav-bar content-width flex justify-between">
+        <span>{{ site.title }}</span>
+        <a href="#" class="btn btn-cta">Button</a>
+        </nav>
+
+        <main class="content-width my-4">
+            {{ content }}
+        </main>
+        <script src="" async defer></script>
+    </body>
+</html>

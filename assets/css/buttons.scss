@@ -1,0 +1,29 @@
+.btn{
+    @apply px-8 py-4 rounded border max-w-fit;
+
+    &:hover{
+        @apply shadow-lg transition;
+    }
+
+    &:active{
+        @apply opacity-75;
+    }
+  }
+
+
+.btn-cta{
+    @apply bg-purple-800 text-stone-50 border-purple-600;
+
+    &:hover{
+        @apply bg-purple-700;
+    }
+}
+
+
+.btn-secondary{
+    @apply text-stone-800 border-stone-300;
+
+    &:hover{
+        @apply bg-stone-200 border-stone-200;
+    }
+}
