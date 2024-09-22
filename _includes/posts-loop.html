@@ -1,6 +1,6 @@
 <div class="flex justify-between my-10">
     {% for post in site.posts %}
-    <article class="max-w-md mr-2 border rounded">
+    <article class="max-w-md mr-2 border rounded hover:shadow-lg hover:bg-stone-100 transition">
 
         <picture class="post-thumbnail">
             <!-- Small screens (e.g., mobile) -->
@@ -23,7 +23,7 @@
         </a>
       </h3>
       <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
-      <span class="line-clamp-4">{{ post.content }}</span>
+      <span class="line-clamp-3">{{ post.content }}</span>
 </div>
       
     </article>
