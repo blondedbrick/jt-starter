@@ -1,3 +1,11 @@
 .nav-bar {
   @apply py-2 border-b border-stone-200 w-full flex justify-center;
 }
+
+#mobile-sidebar {
+  @apply fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out;
+}
+
+#mobile-sidebar.open {
+  transform: translateX(0);
+}

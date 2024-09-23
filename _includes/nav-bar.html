@@ -1,7 +1,13 @@
 <nav class="nav-bar">
   <div class="content-width w-full flex justify-between items-center">
-    <h2 class="text-2xl">{{ site.title }}</h2>
+    <div class="flex items-center">
+      <button id="menu-toggle" class="md:hidden material-symbols-rounded icon-large mr-2 text-stone-500">
+        menu
+      </button>
+      <h2 class="text-xl">{{ site.title }}</h2>
+    </div>
 
+    <!-- Main navigation for desktop -->
     <ul class="list-none flex-row hidden md:flex">
       <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
         <a href="#">About</a>
@@ -14,8 +20,29 @@
       </li>
     </ul>
 
+    <button href="#" class="btn btn-cta hidden md:flex items-center">
+      Button <span class="material-symbols-rounded ml-1">arrow_forward</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Sidebar -->
+<div id="mobile-sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
+  <div class="p-4">
+    <h2 class="text-xl mb-4">{{ site.title }}</h2>
+    <ul class="list-none">
+      <li class="mb-4 text-base text-stone-500 hover:text-stone-800">
+        <a href="#">About</a>
+      </li>
+      <li class="mb-4 text-base text-stone-500 hover:text-stone-800">
+        <a href="#">Projects</a>
+      </li>
+      <li class="mb-4 text-base text-stone-500 hover:text-stone-800">
+        <a href="#">Contact</a>
+      </li>
+    </ul>
     <button href="#" class="btn btn-cta">
       Button <span class="material-symbols-rounded">arrow_forward</span>
     </button>
   </div>
-</nav>
+</div>

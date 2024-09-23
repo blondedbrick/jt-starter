@@ -15,14 +15,16 @@
       href="{{ '/assets/css/tailwind-output.css' | relative_url }}"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body class="flex flex-col items-center">
     {% include nav-bar.html %}
 
-    <main class="content-width my-4">{{ content }}</main>
+    <main class="content-width my-2">{{ content }}</main>
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     {% include footer.html %}
   </body>
 </html>

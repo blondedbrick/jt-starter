@@ -7,10 +7,13 @@
 
 /*material symbols settings*/
 .material-symbols-rounded {
-  @apply p-0 ml-1;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
+}
 
-  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20 !important;
-  color: inherit;
+.icon-large{
+  @apply text-4xl;
+
+  font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
 
 h1,
@@ -29,25 +32,25 @@ p {
 /*Heading Sizes*/
 
 h1 {
-  @apply text-6xl;
+  @apply text-5xl md:text-6xl;
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-3xl md:text-4xl;
 }
 
 h3 {
-  @apply text-3xl;
+  @apply text-2xl md:text-3xl;
 }
 
 h4 {
-  @apply text-2xl;
+  @apply text-xl md:text-2xl;
 }
 
 h5 {
-  @apply text-xl;
+  @apply text-lg md:text-xl;
 }
 
 h6 {
-  @apply text-lg;
+  @apply text-base md:text-lg;
 }
