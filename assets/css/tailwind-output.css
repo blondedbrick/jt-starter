@@ -632,6 +632,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -645,6 +649,10 @@ video {
 
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .aspect-\[4\/3\]{
@@ -667,8 +675,20 @@ video {
   width: 100%;
 }
 
+.w-1\/3{
+  width: 33.333333%;
+}
+
+.w-auto{
+  width: auto;
+}
+
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .list-none{
@@ -683,8 +703,16 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-end{
@@ -697,6 +725,14 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.overflow-x-scroll{
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
 }
 
 .rounded{
@@ -732,6 +768,11 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-2xl{
@@ -867,6 +908,8 @@ video {
   font-optical-sizing: auto;
 }
 
+/*material symbols settings*/
+
 .material-symbols-rounded{
   margin-left: 0.25rem;
   padding: 0px;
@@ -934,6 +977,8 @@ body{
 .content-width{
   width: 100%;
   max-width: 1280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .hover\:bg-stone-100:hover{
@@ -952,9 +997,45 @@ body{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 640px){
+  .sm\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .sm\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 @media (min-width: 768px){
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:mr-2{
+    margin-right: 0.5rem;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:w-1\/2{
@@ -967,5 +1048,15 @@ body{
 
   .md\:flex-row-reverse{
     flex-direction: row-reverse;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:overflow-x-auto{
+    overflow-x: auto;
   }
 }
