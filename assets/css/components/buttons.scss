@@ -1,5 +1,5 @@
 .btn {
-  @apply px-4 py-4 rounded border max-w-fit min-w-36 flex justify-center;
+  @apply px-4 py-2 sm:py-4 rounded border max-w-fit sm:min-w-36 flex justify-center;
 
   &:hover {
     @apply shadow-lg transition;
