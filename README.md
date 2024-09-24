@@ -24,10 +24,7 @@ Directions on how to install Ruby and Jekyll [here](https://jekyllrb.com/).
 
 ### 1: Initialize your Jekyll project
 
-Ensure your Jekyll project is set up and running with the Just-the-Docs theme.
-
-    1.Go to your Jekyll project folder.
-    2.Open your terminal and run:
+Open your Jekyll project folder in VSCode. Open your terminal and run:
 
 `bundle install` `bundle exec jekyll serve`
 
