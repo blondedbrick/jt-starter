@@ -808,22 +808,18 @@ video {
   line-height: 1.5rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.font-bold{
-  font-weight: 700;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.capitalize{
-  text-transform: capitalize;
+.font-bold{
+  font-weight: 700;
 }
 
 .text-gray-600{
@@ -991,7 +987,7 @@ video {
 .breadcrumb{
   margin-bottom: 1.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 0.875rem;
