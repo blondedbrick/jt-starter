@@ -53,3 +53,27 @@ Install Tailwind CSS and its peer dependencies by running:
 Generate a basic tailwind.config.js file using:
 
 `npx tailwindcss init`
+
+### 6: Configure the Tailwind CSS File
+
+In your project, create a new CSS file, for example assets/css/tailwind.css. In this file, include the Tailwind directives:
+
+`@tailwind base;`
+`@tailwind components;`
+`@tailwind utilities;`
+
+### Step 7: Update the tailwind.config.js file
+
+```module.exports = {
+  content: [
+    './_layouts/**/*.html',
+    './_includes/**/*.html',
+    './_posts/*.html',
+    './*.html',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
