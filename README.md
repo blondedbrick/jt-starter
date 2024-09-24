@@ -141,7 +141,7 @@ npm run build:css
 bundle exec jekyll serve
 ```
 
-### Automate the Build Process (Optional)
+### 12: Automate the Build Process (Optional)
 
 To automatically build Tailwind CSS when working on your site, you can add a watch command. Modify the scripts in `package.json`:
 
@@ -157,3 +157,7 @@ Now run the following command to automatically build your CSS as you make change
 ```
 npm run watch:css
 ```
+
+## Making this work with Github Pages
+
+WIP
