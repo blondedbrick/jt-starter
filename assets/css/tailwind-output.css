@@ -637,8 +637,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
 }
 
 .mr-2{
@@ -647,14 +655,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.ml-1{
-  margin-left: 0.25rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .line-clamp-3{
@@ -692,12 +692,12 @@ video {
   min-height: 75vh;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-64{
   width: 16rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-md{
@@ -772,10 +772,6 @@ video {
      object-fit: cover;
 }
 
-.p-12{
-  padding: 3rem;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -784,19 +780,14 @@ video {
   padding: 2rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .text-2xl{
@@ -826,11 +817,6 @@ video {
 .text-stone-500{
   --tw-text-opacity: 1;
   color: rgb(120 113 108 / var(--tw-text-opacity));
-}
-
-.text-stone-600{
-  --tw-text-opacity: 1;
-  color: rgb(87 83 78 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1131,12 +1117,12 @@ body{
 }
 
 @media (min-width: 640px){
-  .sm\:mr-2{
-    margin-right: 0.5rem;
-  }
-
   .sm\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .sm\:mr-2{
+    margin-right: 0.5rem;
   }
 
   .sm\:max-w-md{
@@ -1160,10 +1146,6 @@ body{
 @media (min-width: 768px){
   .md\:mb-0{
     margin-bottom: 0px;
-  }
-
-  .md\:block{
-    display: block;
   }
 
   .md\:flex{
