@@ -1,6 +1,6 @@
 # Jekyll/Tailwind Starter
 
-Jekyll with tailwind built in. This also has material icons linked so theres that. I still have to setup the proper github actions for this to work with github pages, which is the end goal. You may use this template however you like, im not very good with coding so i would appreciate any suggestions on how to improve this starter template.
+Jekyll + Tailwind Starter template. Comes with Material Icons (rounded) by default. Currently working on setting this up with Github Pages.
 
 ## Installing prerequisites
 

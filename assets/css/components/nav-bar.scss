@@ -9,3 +9,28 @@
 #mobile-sidebar.open {
   transform: translateX(0);
 }
+
+.breadcrumb {
+  @apply py-2 bg-gray-100 mb-5 text-sm;
+}
+
+.breadcrumb-list {
+  @apply flex gap-2 list-none;
+}
+
+.breadcrumb-list li {
+  @apply inline-block;
+}
+
+.breadcrumb-list a {
+  @apply text-blue-500 hover:underline;
+}
+
+.breadcrumb-list li::after {
+  content: ">";
+  @apply text-gray-500 mx-2;
+}
+
+.breadcrumb-list li:last-child::after {
+  content: "";
+}

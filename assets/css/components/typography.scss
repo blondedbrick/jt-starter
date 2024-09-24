@@ -10,47 +10,86 @@
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
 }
 
-.icon-large{
+.icon-large {
   @apply text-4xl;
 
   font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
 
+/* Base Typography Styles */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply text-stone-900 font-semibold;
+  @apply text-stone-900 font-semibold leading-tight; /* Ensure proper line-height for readability */
 }
 
-p {
-  @apply text-stone-500 text-lg;
-}
-
-/*Heading Sizes*/
-
+/* Responsive Heading Sizes for Accessibility */
 h1 {
-  @apply text-5xl md:text-6xl;
+  @apply text-5xl md:text-6xl leading-tight tracking-tight; /* High contrast, tight tracking */
 }
 
 h2 {
-  @apply text-3xl md:text-4xl;
+  @apply text-3xl md:text-4xl leading-tight tracking-tight;
 }
 
 h3 {
-  @apply text-2xl md:text-3xl;
+  @apply text-2xl md:text-3xl leading-tight tracking-tight;
 }
 
 h4 {
-  @apply text-xl md:text-2xl;
+  @apply text-xl md:text-2xl leading-tight tracking-tight;
 }
 
 h5 {
-  @apply text-lg md:text-xl;
+  @apply text-lg md:text-xl leading-snug tracking-normal;
 }
 
 h6 {
-  @apply text-base md:text-lg;
+  @apply text-base md:text-lg leading-snug tracking-normal;
+}
+
+p {
+  @apply text-lg md:text-xl leading-relaxed tracking-normal text-stone-600;
+}
+
+main a {
+  @apply hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;
+
+  text-decoration-color: #1d4fd881;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+
+  &:hover {
+    text-decoration-color: #1d4fd8;
+  }
+}
+
+strong {
+  @apply font-semibold text-stone-900;
+}
+
+em {
+  @apply italic;
+}
+
+blockquote {
+  @apply italic text-stone-700 border-l-4 border-stone-300 pl-4;
+}
+
+body {
+  @apply bg-white text-stone-900 leading-relaxed;
+}
+
+ul,
+ol {
+  @apply list-inside list-disc;
+  @apply text-lg leading-relaxed;
+}
+
+ul > li::marker,
+ol > li::marker {
+  @apply text-stone-600;
 }

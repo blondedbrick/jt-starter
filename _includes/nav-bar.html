@@ -1,22 +1,27 @@
 <nav class="nav-bar">
   <div class="content-width w-full flex justify-between items-center">
     <div class="flex items-center">
-      <button id="menu-toggle" class="md:hidden material-symbols-rounded icon-large mr-2 text-stone-500">
+      <button
+        id="menu-toggle"
+        class="md:hidden material-symbols-rounded icon-large mr-2 text-stone-500"
+      >
         menu
       </button>
-      <h2 class="text-xl">{{ site.title }}</h2>
+      <a href="{{ site.baseurl }}/"
+        ><h2 class="text-xl">{{ site.title }}</h2></a
+      >
     </div>
 
     <!-- Main navigation for desktop -->
     <ul class="list-none flex-row hidden md:flex">
       <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
-        <a href="#">About</a>
+        <a href="{{ site.baseurl }}/about/">About</a>
       </li>
       <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
-        <a href="#">Projects</a>
+        <a href="{{ site.baseurl }}/projects/">Projects</a>
       </li>
       <li class="mx-4 text-base text-stone-500 hover:text-stone-800">
-        <a href="#">Contact</a>
+        <a href="{{ site.baseurl }}/contact/">Contact</a>
       </li>
     </ul>
 
@@ -26,13 +31,31 @@
   </div>
 </nav>
 
+<!-- Breadcrumb Nav -->
+
+{% unless page.url == "/" %}
+<nav class="breadcrumb w-full flex justify-center text-sm">
+  <ul class="breadcrumb-list content-width">
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    {% for part in page.url | split: '/' %} {% unless part == "" %}
+    <li>
+      <a href="{{ site.baseurl }}{{ part }}">{{ page.title }}</a>
+    </li>
+    {% endunless %} {% endfor %}
+  </ul>
+</nav>
+{% endunless %}
+
 <!-- Mobile Sidebar -->
-<div id="mobile-sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out">
+<div
+  id="mobile-sidebar"
+  class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out"
+>
   <div class="p-4">
     <h2 class="text-xl mb-4">{{ site.title }}</h2>
     <ul class="list-none">
       <li class="mb-4 text-base text-stone-500 hover:text-stone-800">
-        <a href="#">About</a>
+        <a href="about/">About</a>
       </li>
       <li class="mb-4 text-base text-stone-500 hover:text-stone-800">
         <a href="#">Projects</a>

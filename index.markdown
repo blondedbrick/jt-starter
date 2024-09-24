@@ -4,6 +4,7 @@
 
 layout: default
 title: Landing Page
+permalink: /
 ---
 
 {% include hero-section.html %}
