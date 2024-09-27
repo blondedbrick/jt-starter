@@ -16,46 +16,14 @@
   font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
 
-/* Base Typography Styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply text-stone-900 font-semibold leading-tight; /* Ensure proper line-height for readability */
+
+main {
+  @apply prose prose-base md:prose-lg prose-headings:font-semibold;
 }
+
 
 /* Responsive Heading Sizes for Accessibility */
-main {
-  h1 {
-    @apply text-5xl md:text-6xl leading-tight tracking-tight mb-4; /* High contrast, tight tracking */
-  }
 
-  h2 {
-    @apply text-3xl md:text-4xl leading-tight tracking-tight mb-4;
-  }
-
-  h3 {
-    @apply text-2xl md:text-3xl leading-tight tracking-tight mb-3;
-  }
-
-  h4 {
-    @apply text-xl md:text-2xl leading-tight tracking-tight mb-3;
-  }
-
-  h5 {
-    @apply text-lg md:text-xl leading-snug tracking-normal mb-2;
-  }
-
-  h6 {
-    @apply text-base md:text-lg leading-snug tracking-normal mb-2;
-  }
-}
-
-p {
-  @apply text-lg md:text-xl leading-relaxed tracking-normal text-stone-600;
-}
 
 main a {
   @apply hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;
@@ -79,10 +47,6 @@ em {
 
 blockquote {
   @apply italic text-stone-700 border-l-4 border-stone-300 pl-4;
-}
-
-body {
-  @apply bg-white text-stone-900 leading-relaxed;
 }
 
 ul,

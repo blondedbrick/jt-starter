@@ -36,10 +36,10 @@
   <body class="flex flex-col items-center">
     {% include nav-bar.html %}
 
-    <main class="content-width flex justify-center my-2 min-h-[65vh]">
-        <article class="prose-base md:prose-lg max-w-3xl p-2">
+    <main class="content-width flex justify-center my-4 min-h-[65vh]">
+        <section class="post-content max-w-3xl p-2">
             {{ content }}
-        </article></main>
+        </section></main>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     {% include footer.html %}
