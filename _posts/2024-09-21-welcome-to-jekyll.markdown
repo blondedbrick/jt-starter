@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 title: "Welcome to Jekyll!"
 date: 2024-09-21 17:46:19 -0500
 thumbnail: "https://placehold.co/800x600.jpeg"

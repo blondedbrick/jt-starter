@@ -80,7 +80,7 @@ In your project, create a new CSS file, for example `assets/css/tailwind.css`. I
 @tailwind utilities;
 ```
 
-### Step 7: Update the tailwind.config.js file
+### 7: Update the tailwind.config.js file
 
 ```
 module.exports = {
