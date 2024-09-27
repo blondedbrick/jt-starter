@@ -2,15 +2,17 @@
   "name": "my-jekyll-site",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "build:css": "npx tailwindcss -i ./assets/css/main.scss -o ./assets/css/tailwind-output.css --minify",
-  "watch:css": "npx tailwindcss -i ./assets/css/main.scss -o ./assets/css/tailwind-output.css --watch"
-},
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/main.scss -o ./assets/css/tailwind-output.css --minify",
+    "watch:css": "npx tailwindcss -i ./assets/css/main.scss -o ./assets/css/tailwind-output.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.12"
