@@ -16,14 +16,21 @@
   font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
 
+/*Tailwind Prose Stuff*/
 
 main {
   @apply prose prose-base md:prose-lg prose-headings:font-semibold;
 }
 
+.no-prose-margin {
+  @apply prose-headings:my-0 prose-img:my-0;
+
+  .post-thumbnail {
+    @apply my-0;
+  }
+}
 
 /* Responsive Heading Sizes for Accessibility */
-
 
 main a {
   @apply hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;

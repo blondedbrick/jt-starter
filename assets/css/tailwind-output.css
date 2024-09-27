@@ -692,12 +692,12 @@ video {
   height: 100%;
 }
 
-.min-h-\[65vh\]{
-  min-height: 65vh;
+.min-h-96{
+  min-height: 24rem;
 }
 
-.min-h-\[75vh\]{
-  min-height: 75vh;
+.min-h-\[65vh\]{
+  min-height: 65vh;
 }
 
 .w-64{
@@ -821,8 +821,8 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold{
-  font-weight: 700;
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-gray-600{
@@ -1058,6 +1058,8 @@ video {
   line-height: 2.5rem;
   font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
+
+/*Tailwind Prose Stuff*/
 
 main{
   color: var(--tw-prose-body);
@@ -2062,6 +2064,23 @@ main :where(.prose-base > :last-child):not(:where([class~="not-prose"],[class~="
 
 main :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))){
   font-weight: 600;
+}
+
+.no-prose-margin :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.no-prose-margin :is(:where(img):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.no-prose-margin {
+  .post-thumbnail{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 /* Responsive Heading Sizes for Accessibility */

@@ -8,7 +8,7 @@
         menu
       </button>
       <a href="{{ site.baseurl }}/"
-        ><h2 class="text-xl">{{ site.title }}</h2></a
+        ><h2 class="text-xl font-semibold">{{ site.title }}</h2></a
       >
     </div>
 
@@ -34,7 +34,7 @@
 
 {% unless page.url == "/" %}
 <nav class="breadcrumb w-full flex justify-center text-sm">
-  <ul class="breadcrumb-list content-width">
+  <ul class="breadcrumb-list content-width text-sm">
     <li><a href="{{ site.baseurl }}/">Home</a></li>
     {% for part in page.url | split: '/' %} {% unless part == "" %}
     <li>
