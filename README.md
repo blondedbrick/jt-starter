@@ -20,6 +20,15 @@ npm run build:css
 npm run watch:css
 ```
 
+These tailwind plugins are required for their corresponding classes
+
+```
+npm install @tailwindcss/typography
+npm install @tailwindcss/aspect-ratio
+```
+
+Currently working on how to automate some of these commands.
+
 ## How how to make your own Jekyll + Tailwind starter
 
 ### 0: Create your Jekyll project
