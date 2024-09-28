@@ -17,13 +17,15 @@
           </picture>
 
 <div class="p-4">
-    <h3 class="mb-2">
+    <h3 class="mb-4">
         <a href="{{ post.url }}">
           {{ post.title }}
         </a>
       </h3>
-      <span class="line-clamp-3 mb-4">{{ post.content }}</span>
-      <time class="text-stone-500" datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
+      <div class="mt-4">
+        <time class="text-stone-500" datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
+      </div>
+
 </div>
       
     </article>

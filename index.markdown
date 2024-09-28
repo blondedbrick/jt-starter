@@ -7,7 +7,7 @@ title: Landing Page
 permalink: /
 ---
 
-{% include section/hero-section.html %}
+{% include sections/hero-section.html %}
 
 {% include blocks/spacer-md.html %}
 
