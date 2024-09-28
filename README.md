@@ -13,18 +13,18 @@ bundle exec jekyll build
 bundle exec jekyll serve
 ```
 
+Then Install these tailwind plugins, if you haven't already, they are required for their corresponding classes.
+
+```
+npm install @tailwindcss/typography
+npm install @tailwindcss/aspect-ratio
+```
+
 Afterwards open a second terminal and input the following commands, also in order:
 
 ```
 npm run build:css
 npm run watch:css
-```
-
-These tailwind plugins are required for their corresponding classes
-
-```
-npm install @tailwindcss/typography
-npm install @tailwindcss/aspect-ratio
 ```
 
 Currently working on how to automate some of these commands.
