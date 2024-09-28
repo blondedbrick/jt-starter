@@ -7,10 +7,16 @@ title: Landing Page
 permalink: /
 ---
 
-{% include hero-section.html %}
+{% include section/hero-section.html %}
 
-{% include media-text.html %}
+{% include blocks/spacer-md.html %}
 
-{% include media-text-reverse.html %}
+{% include blocks/media-text.html %}
 
-{% include posts-loop.html %}
+{% include blocks/spacer-sm.html %}
+
+{% include blocks/media-text-reverse.html %}
+
+{% include blocks/spacer-md.html %}
+
+{% include blocks/posts-loop.html %}
