@@ -1,6 +1,6 @@
 <div class="px-2 sm:px-0 flex flex-col sm:flex-row justify-between my-10 overflow-x-scroll lg:overflow-x-auto">
     {% for post in site.posts limit:3%}
-    <article class="sm:max-w-md mb-4 sm:mr-2 border rounded hover:shadow-lg hover:bg-stone-100 transition">
+    <article class="sm:max-w-md mb-4 sm:mr-2 border rounded hover:shadow-lg transition">
 
         <picture class="post-thumbnail">
             <!-- Small screens (e.g., mobile) -->
@@ -22,8 +22,17 @@
           {{ post.title }}
         </a>
       </h3>
-      <div class="mt-4">
-        <time class="text-stone-500" datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
+      <div class="mt-2">
+        {% if post.categories %}
+        <ul class="my-2 flex text-sm text-stone-600 list-none p-0">
+          {% for category in post.categories %}
+            <li class="pl-0 mr-2">
+              <a href="{{ site.baseurl }}/categories/{{ category | slugify }}" class="py-1 px-2 border bg-neutral-100 rounded-sm no-underline">{{ category }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+        <time class="text-stone-500 text-sm" datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_long_string }}</time>
       </div>
 
 </div>

@@ -7,6 +7,6 @@ title: Posts
 permalink: /posts
 ---
 
-# This is the Posts Page
+## This is the Posts Page
 
 {% include blocks/posts-loop.html %}
