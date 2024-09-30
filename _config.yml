@@ -21,9 +21,9 @@
 title: This Is My Site
 first-name: Brick
 last-name: Adamos
-email: Your Email
+email: "user@example.com"
 phone: "+1-234-567-890"
-address: "1234 Street Name, City, Country"
+address: "1234 Street Name<br>Winnipeg MB"
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
