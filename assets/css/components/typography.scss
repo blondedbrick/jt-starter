@@ -19,7 +19,7 @@
 /*Tailwind Prose Stuff*/
 
 main {
-  @apply prose prose-base md:prose-lg prose-headings:font-semibold;
+  @apply prose prose-base md:prose-xl prose-headings:font-semibold prose-img:rounded;
 }
 
 .no-prose-margin {
@@ -33,7 +33,7 @@ main {
 /* Responsive Heading Sizes for Accessibility */
 
 main a {
-  @apply hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;
+  @apply text-blue-600 hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;
 
   text-decoration-color: #1d4fd881;
   text-underline-offset: 3px;
