@@ -48,6 +48,9 @@ social_media:
     url: "https://twitter.com/yourprofile"
   - handle: "facebook"
     url: "https://facebook.com/yourprofile"
+  - handle: "Github"
+    url: "https://github.com/yourprofile"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
