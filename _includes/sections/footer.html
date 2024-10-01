@@ -1,6 +1,6 @@
-<footer class="bg-stone-900 text-stone-100 pt-12 pb-8 min-w-full flex justify-center">
-  <div class="content-width">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<footer class="bg-stone-900 text-stone-100 pt-12 pb-8 min-w-full flex justify-center flex-col">
+  <div class="flex justify-center">
+    <div class="content-width grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Quick Links Section -->
       <div>
@@ -9,7 +9,7 @@
           {% for page in site.pages %}
             {% if page.layout and page.layout != 'post' and page.title and page.url %}
               <li class="mb-2">
-                <a href="{{ page.url | relative_url }}" class="hover:text-yellow-300">{{ page.title }}</a>
+                <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
               </li>
             {% endif %}
           {% endfor %}
@@ -20,7 +20,7 @@
       <div>
         <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
         {% if site.email %}
-          <p>Email: <a href="mailto:{{ site.email }}" class="hover:text-yellow-300">{{ site.email }}</a></p>
+          <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         {% endif %}
         {% if site.phone %}
           <p>Phone: {{ site.phone }}</p>
@@ -33,24 +33,21 @@
       <!-- Social Media Links Section -->
       <div>
         <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
-        <ul class="flex space-x-4">
-          {% if site.social %}
-            {% for url in site.social %}
-              <li>
-                <a href="{{ url }}" class="hover:text-yellow-300" target="_blank" rel="noopener noreferrer">
-                  {{ platform | capitalize }}
-                </a>
-              </li>
-            {% endfor %}
-          {% endif %}
+        <ul class="list-none flex flex-col sm:flex-row items-center mb-2">
+          {% for social in site.social_media %}
+            <li class="sm:ml-4 mb-2 sm:mb-0">
+              <a href="{{ social.url }}" class="text-stone-500 hover:text-stone-700">
+                {{ social.handle | capitalize }}
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
 
     </div>
-
-    <!-- Footer Bottom Section -->
-    <div class="mt-8 border-t border-stone-700 pt-4 text-center text-stone-400">
-      <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.</p>
-    </div>
   </div>
+      <!-- Footer Bottom Section -->
+      <div class="mt-8 border-t border-stone-700 pt-4 text-center text-stone-400">
+        <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.</p>
+      </div>
 </footer>

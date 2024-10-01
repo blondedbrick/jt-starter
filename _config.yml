@@ -41,11 +41,13 @@ sass:
   style: compressed
 
 
-social:
-  twitter: "https://twitter.com/yourprofile"
-  facebook: "https://facebook.com/yourprofile"
-  linkedin: "https://linkedin.com/in/yourprofile"
-  instagram: "https://instagram.com/yourprofile"
+social_media:
+  - handle: "instagram"
+    url: "https://instagram.com/yourprofile"
+  - handle: "twitter"
+    url: "https://twitter.com/yourprofile"
+  - handle: "facebook"
+    url: "https://facebook.com/yourprofile"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

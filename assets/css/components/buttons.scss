@@ -1,12 +1,12 @@
 .btn {
   @apply px-4 py-2 sm:py-3 rounded border max-w-fit sm:min-w-36 flex justify-center;
 
-  &:hover {
-    @apply shadow-lg transition;
+  &:hover{
+    @apply transition;
   }
 
   &:active {
-    @apply opacity-75;
+    @apply opacity-65;
   }
 }
 
@@ -14,7 +14,7 @@
   @apply bg-indigo-600 text-stone-50 border-indigo-500;
 
   &:hover {
-    @apply bg-indigo-800 border-indigo-800;
+    @apply bg-indigo-800 border-indigo-800 shadow-lg;
   }
 }
 
@@ -22,7 +22,7 @@
   @apply text-stone-100 bg-stone-700 border-stone-600;
 
   &:hover {
-    @apply bg-stone-900 border-stone-900;
+    @apply bg-stone-900 border-stone-900 shadow-lg;
   }
 }
 
