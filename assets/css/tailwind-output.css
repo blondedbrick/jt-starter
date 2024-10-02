@@ -817,10 +817,6 @@ video {
   padding: 0px;
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -1136,7 +1132,7 @@ video {
   font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
 
-/*Tailwind Prose Stuff*/
+/*Tailwind Prose Styling*/
 
 main{
   color: var(--tw-prose-body);
@@ -2164,11 +2160,7 @@ main :is(:where(img):not(:where([class~="not-prose"],[class~="not-prose"] *))){
   }
 }
 
-/* Responsive Heading Sizes for Accessibility */
-
 main a{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
 
@@ -2194,41 +2186,6 @@ main a {
   &:hover {
     text-decoration-color: #1d4fd8;
   }
-}
-
-strong{
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(28 25 23 / var(--tw-text-opacity));
-}
-
-em{
-  font-style: italic;
-}
-
-blockquote{
-  border-left-width: 4px;
-  --tw-border-opacity: 1;
-  border-color: rgb(214 211 209 / var(--tw-border-opacity));
-  padding-left: 1rem;
-  font-style: italic;
-  --tw-text-opacity: 1;
-  color: rgb(68 64 60 / var(--tw-text-opacity));
-}
-
-ul,
-ol{
-  list-style-position: inside;
-  list-style-type: disc;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.625;
-}
-
-ul > li::marker,
-ol > li::marker{
-  --tw-text-opacity: 1;
-  color: rgb(87 83 78 / var(--tw-text-opacity));
 }
 
 /* Custom Styling */

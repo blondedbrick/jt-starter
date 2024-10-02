@@ -16,7 +16,7 @@
   font-variation-settings: "wght" 400, "opsz" 48 !important;
 }
 
-/*Tailwind Prose Stuff*/
+/*Tailwind Prose Styling*/
 
 main {
   @apply prose prose-base md:prose-xl prose-headings:font-semibold prose-img:rounded;
@@ -30,10 +30,8 @@ main {
   }
 }
 
-/* Responsive Heading Sizes for Accessibility */
-
 main a {
-  @apply text-blue-600 hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;
+  @apply hover:text-blue-700 underline focus:outline-none focus:ring-2 focus:ring-blue-400;
 
   text-decoration-color: #1d4fd881;
   text-underline-offset: 3px;
@@ -42,27 +40,4 @@ main a {
   &:hover {
     text-decoration-color: #1d4fd8;
   }
-}
-
-strong {
-  @apply font-semibold text-stone-900;
-}
-
-em {
-  @apply italic;
-}
-
-blockquote {
-  @apply italic text-stone-700 border-l-4 border-stone-300 pl-4;
-}
-
-ul,
-ol {
-  @apply list-inside list-disc;
-  @apply text-lg leading-relaxed;
-}
-
-ul > li::marker,
-ol > li::marker {
-  @apply text-stone-600;
 }
