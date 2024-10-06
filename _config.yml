@@ -28,13 +28,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: '' #Your githubpages URL
+baseurl: '' #Your
 github_username: blondedbrick
 
+theme: minima
+  
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 sass:
   sass_dir: assets/css
@@ -50,6 +53,10 @@ social_media:
     url: "https://facebook.com/yourprofile"
   - handle: "Github"
     url: "https://github.com/yourprofile"
+
+exclude:
+  - node_modules
+  - vendor
 
 
 # Exclude from processing.
