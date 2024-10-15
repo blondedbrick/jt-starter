@@ -4,7 +4,7 @@
 
 layout: default
 title: Posts
-permalink: /posts
+permalink: /posts/
 ---
 
 ## This is the Posts Page

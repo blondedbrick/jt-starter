@@ -1,6 +1,6 @@
 # Jekyll/Tailwind Starter
 
-Jekyll + Tailwind Starter template. Comes with Material Icons (rounded) by default. Currently working on setting this up with Github Pages.
+Jekyll + Tailwind Starter template.
 
 ## Installing prerequisites
 

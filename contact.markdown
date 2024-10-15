@@ -4,7 +4,7 @@
 
 layout: default
 title: Contact
-permalink: /contact
+permalink: /contact/
 ---
 
 # Heading 1
